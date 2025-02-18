@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtSpace - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: url('C:/Users/Admin/OneDrive/文件/background.png') no-repeat center center/cover;
+            background: size 10%;
+        }
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            width: 120px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .hero-content {
+            max-width: 600px;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #e65b50;
+        }
+        .image-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: 250px;
+            height: 400px;
+            background: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            overflow: hidden;
+            animation: anima;
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .contact-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background: #e65b50;
+        }
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .cta-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+
+        .img1{
+          width: 2500px;
+          height: 320px;
+          position: relative;
+          left: 9%;
+          top: -7%;
+          
+        }
+        .buy-button {
+          text-align: center;
+          height:10%;
+            width: 100%;
+            padding: 10px;
+            background: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+position: relative;
+right: 10%;
+top: 40%;
+border-radius: 10%;
+
+        }
+        .buy-button:hover {
+            background: #e65b50;
+        }
+       .dis{
+        
+       font-weight: 700;
+       font-size: larger;
+       }
+       .h{
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+        position: relative;
+        left: 5%;
+        
+       }
+      .navl:hover{
+color:bisque
+
+      }
+
+      @keyframes anima {
+        0%{
+            position: absolute;
+            top: 0;
+box-shadow: black;
+        }
+        50%{
+            position: absolute;
+            top: 5%;
+        }
+
+        100%{
+            position: absolute;
+            bottom: 0%;
+        }
+        
+      }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <img src="https://i.pinimg.com/736x/d1/9e/dd/d19eddef901eab43b73b4bbc596d056b.jpg" alt="ArtSpace Logo" class="logo">
+            <div class="h"><h1>ART-STUDIO</h1></div>
+            <ul class="nav-links">
+                <li><a href="#" class="navl">Home</a></li>
+                <li  ><a href="#" class="navl">Gallery</a></li>
+                <li  ><a href="#" class="navl">Sell Art</a></li>
+                <li ><a href="#" class="navl">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Discover & Collect Stunning Artworks</h1>
+            <p>Connecting artists with art lovers worldwide.</p>
+            <a href="#gallery" class="cta-button">Explore Artworks</a>
+        </div>
+    </header>
+    <section class="image-boxes">
+        <div class="box"><div class="img1"><img src="C:\Users\Admin\Downloads\IMG_20241123_170630.png" alt="Artwork 1" ><div class="dis"> $49.99</div></div><button class="buy-button">Buy </button></div>
+          
+        <div class="box">  <div class="img1"><img src="https://as2.ftcdn.net/v2/jpg/00/78/36/47/1000_F_78364742_j56eRhY4xqDTNLNtQrwo2V0XYefQTUI2.jpg"alt="Artwork 2"> <div class="dis">  price:$50.99</div></div>
+       <button class="buy-button">Buy </button></div>
+        <div class="box"><div class="img1"><img src="https://as1.ftcdn.net/v2/jpg/02/73/22/74/1000_F_273227473_N0WRQuX3uZCJJxlHKYZF44uaJAkh2xLG.jpg" alt="Artwork 3" ><div class="dis">  price:$20.99</div></div><button class="buy-button">Buy </button></div>
+        <div class="box"><div class="img1"><img src="https://as1.ftcdn.net/v2/jpg/04/23/10/32/1000_F_423103257_OE44OXn3Jm7HeVRdLE9V7CVr1kVT3d0H.jpg" alt="Artwork 1" ><div class="dis">  price:$50.99</div></div><button class="buy-button">Buy </button></div>
+        <div class="box"><div class="img1"><img src="https://as1.ftcdn.net/v2/jpg/01/67/01/50/1000_F_167015010_BHlXa6K2ChVeuxJrMfqjlNJ9rsXwx6oz.jpg" alt="Artwork 2" ><div class="dis">  price:$40</div></div><button class="buy-button">Buy </button></div>
+        <div class="box"><div class="img1"><img src="https://as1.ftcdn.net/v2/jpg/05/34/82/56/1000_F_534825681_C6H0UZY8A1ZciwQH5QbJV7OSMmeTyo7i.jpg" alt="Artwork 3"><div class="dis">  price:$30.99</div></div><button class="buy-button">Buy </button></div>
+        <div class="box"><div class="img1"><img src="https://as2.ftcdn.net/v2/jpg/00/49/14/09/1000_F_49140908_6FcY5NRrrvKCbojhKASViIlbsMcvHMEE.jpg" alt="Artwork 1"><div class="dis">  price:$20.99</div></div><button class="buy-button">Buy </button></div>
+        <div class="box"><div class="img1"><img src="https://as1.ftcdn.net/v2/jpg/02/73/22/70/1000_F_273227085_wejcJgFKAfPFeVRNhMm2LWrrWKE8SuLF.jpg" alt="Artwork 2"><div class="dis">  price:$10.99</div></div><button class="buy-button">Buy</button></div>
+        <div class="box"><div class="img1"><img src="https://as1.ftcdn.net/v2/jpg/04/21/53/82/1000_F_421538237_0CgOymMrk1QbVIduN9T1YPiKqIdK0K3r.jpg" alt="Artwork 3"><div class="dis">  price:$43.99</div></div><button class="buy-button">Buy </button></div>
+        <div class="box"><div class="img1"><img src="https://m.media-amazon.com/images/I/71N9bGfQSfL._SX522_.jpg" alt="Artwork 1" ><div class="dis">  price:$45.99</div></div><button class="buy-button">Buy</button></div>
+        <div class="box"><div class="img1"><img src="https://www.paintingtogogh.com/cdn/shop/products/AfricanSunset_product_720x.jpg" alt="Artwork 2" ><div class="dis">  price:$50.99</div></div><button class="buy-button">Buy</button></div>
+        <div class="box"><div class="img1"><img src="https://as2.ftcdn.net/v2/jpg/05/82/15/65/1000_F_582156555_hbyp1b5f45xGtOp2PPDngIOX4YKv7tZF.jpg" alt="Artwork 3" ><div class="dis">  price:$40.99</div></div><button class="buy-button">Buy </button></div>
+    </section>
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form onsubmit="showAlert(event)">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="tel" placeholder="Enter your contact number" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script>
+        function showAlert(event) {
+            event.preventDefault();
+            alert("Thank you for contacting us! We will get back to you soon.");
+        }
+    </script>
+</body>
+</html>
